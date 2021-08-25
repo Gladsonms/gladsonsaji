@@ -680,21 +680,25 @@
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
                               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                              <div class="text-danger" id=Errorname></div>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              <div class="text-danger" id="Errormail"></div>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                              <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" required>
+                              <div class="text-danger" id="Errorphone"></div>
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                              <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message" required></textarea>
+                              <div class="text-danger" id="ErrorMessage"></div>
                             </div>
                           </div>
                           <div class="col-md-12 text-center my-3">
@@ -781,8 +785,14 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
 
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="validation.js">
+   
+  </script>
 
 </body>
 
