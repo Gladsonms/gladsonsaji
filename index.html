@@ -675,39 +675,41 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form action="" id="submit-form" class="php-email-form">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" >
                               <div class="text-danger" id=Errorname></div>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" >
                               <div class="text-danger" id="Errormail"></div>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" required>
+                              <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" >
                               <div class="text-danger" id="Errorphone"></div>
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message" required></textarea>
+                              <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message" ></textarea>
                               <div class="text-danger" id="ErrorMessage"></div>
                             </div>
                           </div>
                           <div class="col-md-12 text-center my-3">
                             <div class="loading">Loading</div>
-                            <div class="error-message"></div>
+                            <!-- <div class="text-danger" id="ErrMsg"></div> -->
                             <div class="sent-message">Your message has been sent. Thank you!</div>
                           </div>
                           <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                            <div class="text-danger" id="ErrMsg"></div>
+                            <button type="submit" class="button button-a button-big button-rouded" id="sub-btn">Send Message</button>
+                           
                           </div>
                         </div>
                       </form>
@@ -758,7 +760,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <p class="copyright">&copy; Copyright <strong>Gladson M S</strong>. All Rights Reserved</p>
             <div class="credits">
               <!--
               All the links in the footer should remain intact.
@@ -766,7 +768,7 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
             -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Designed by <a href="https://bootstrapmade.com/">Gladson M S</a>
             </div>
           </div>
         </div>
