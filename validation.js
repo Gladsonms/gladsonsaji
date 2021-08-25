@@ -2,12 +2,16 @@ $(document).ready(function() {
     $('#Errorname').hide();
     let Errorname=true;
     $('#name').on('input',function () {
+        this.value=this.value.replace(/[^a-zA-z ]/, '').replace(/(\..*)\./, '$1');
       validateusername();
     })
     var validname=false;
+    
    function validateusername ()
    {
+
      let namevalue = $('#name').val();
+    
      var nameRegex=/^[a-zA-Z ]+$/ 
      if (namevalue.includes('  ')){
        $('#Errorname').show();
@@ -17,8 +21,10 @@ $(document).ready(function() {
        return false;
 
      }
+     
      else if(!namevalue.match(nameRegex))
-     {
+     {  
+         
          $("#Errorname").show();
          $("#Errorname").html("Name contain only alphabets ")
          Errorname = false;
@@ -84,8 +90,10 @@ $(document).ready(function() {
    let Errorphone=true;
    var validphone=false;
    $('#phone').on('input',function(e){
+       this.value=this.value.replace(/[^0-9]/,'');
        validatePhone();
    })
+ 
        function validatePhone(){
            let phonevalue=$("#phone").val();
           
