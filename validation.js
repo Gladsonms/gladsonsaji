@@ -153,7 +153,8 @@ $(document).ready(function() {
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
-                    alert("Form submitted successfully")
+                    // alert("Form submitted successfully")
+                    $("#SucessMsg").text("Thanks for Your Response we will contact you back shortly");
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
@@ -165,9 +166,17 @@ $(document).ready(function() {
         }
         else
         {
-           console.log("ihi")
+        //    console.log("ihi")
+            $("#Errorname").show();
+            $("#Errorname").text("Please enter your name");
+            $("#Errormail").show();
+            $("#Errormail").text("Please enter your mail id");
+            $("#Errorphone").show();
+            $("#Errorphone").text("Please Enter your phone number");
+           $("#ErrorMessage").show();
+            $("#ErrorMessage").text("Please enter your Message");
             $('#ErrMsg').text("Please enter all fields")
-            console.log("error")
+            // console.log("error")
         }
         
      })
