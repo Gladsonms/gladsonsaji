@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#Errorname').hide();
     let Errorname=true;
     $('#name').on('input',function () {
-        this.value=this.value.replace(/[^a-zA-z ]/, '').replace(/(\..*)\./, '$1');
+        this.value=this.value.replace(/[^a-zA-Z ]/, '');
       validateusername();
     })
     var validname=false;
@@ -153,8 +153,8 @@ $(document).ready(function() {
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
-                    // alert("Form submitted successfully")
-                    $("#SucessMsg").text("Thanks for Your Response we will contact you back shortly");
+                 alert("Form submitted successfully")
+                    // $("#SucessMsg").text("Thanks for Your Response we will contact you back shortly");
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
